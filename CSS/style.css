@@ -1,7 +1,6 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: black;
     color: white; 
     text-align: center;
     background-image: url(https://cdn.pixabay.com/photo/2014/05/21/14/57/milky-way-349720_1280.jpg);
@@ -9,14 +8,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    text-align: center;
+
 }
 h1{
     font-size: 45px;
 }
-input{
-    width: 75px;
-    height: 50px;
+.textview{
+    width: 10rem;
+    height: 30px;
     font-size: 45px;
     border-radius: 10px;
     margin: 10px;
@@ -24,9 +23,30 @@ input{
     color: black;
     border-style: none;
 }
-.btn:hover{
-    background-color: yellow;
-    cursor:pointer;
 
+
+.thecal{
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    width: 100%;
+}
+.number, .operator, #clear{
+    border-radius: 10px;
+}
+button{
+    width: 30px;
+    height: 30px;
     
 }
+
+.themain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+

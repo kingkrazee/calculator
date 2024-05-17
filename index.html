@@ -8,25 +8,40 @@
 </head>
 <body>
     <h1>Krazee's Kalculator</h1>
-    <form action="" name="clc">
-        <input type="text" name="display" style="width: 370px; height: 70px; background-color: aquamarine; "><br>
-        <input class="btn" type="button" value="0" onclick="clc.display.value +='0'">
-        <input class="btn" type="button" value="1" onclick="clc.display.value +='1'">
-        <input class="btn" type="button" value="2" onclick="clc.display.value +='2'">
-        <input class="btn" type="button" value="+" onclick="clc.display.value +='+'"style="background-color: orange;"><br>
-        <input class="btn" type="button" value="3" onclick="clc.display.value +='3'">
-        <input class="btn" type="button" value="4" onclick="clc.display.value +='4'">
-        <input class="btn" type="button" value="5" onclick="clc.display.value +='5'">
-        <input class="btn" type="button" value="-" onclick="clc.display.value +='-'" style="background-color: rgb(212, 0, 255);"><br>
-        <input class="btn" type="button" value="6" onclick="clc.display.value +='6'">
-        <input class="btn" type="button" value="7" onclick="clc.display.value +='7'">
-        <input class="btn" type="button" value="8" onclick="clc.display.value +='8'">
-        <input class="btn" type="button" value="*" onclick="clc.display.value +='*'" style="background-color: brown;"><br>
-        <input class="btn" type="button" value="9"onclick="clc.display.value +='9'">
-        <input class="btn" type="button" value="C" onclick="clc.display.value =''" style="background-color: aqua;">
-        <input class="btn" type="button" value="=" onclick="clc.display.value =eval(clc.display.value)">
-        <input class="btn" type="button" value="/" onclick="clc.display.value +='/'" style="background-color: rgb(199, 125, 35);">
+    <!-- <form> -->
+        <div class="themain">
+            <input class="textview" id="textview" type="text" readonly placeholder="0"/>
+            <div class="yy">
+                <div class="thecal">
+    
+                    <br>
+                    <button type="button" class="clr" id="clear" onclick="clean()" >C</button>
+                    <button type="button" class= "number" onclick="insert(1)">1</button>           
+                    <button type="button" class= "number" onclick="insert(2)">2</button>
+                    <button type="button" class= "number" onclick="insert(3)">3</button>       
+                    <button type="button" class= "number" onclick="insert(4)">4</button>           
+                    <button type="button" class= "number" onclick="insert(5)">5</button>     
+                    <button type="button" class= "number" onclick="insert(6)">6</button>              
+                    <button type="button" class= "number" onclick="insert(7)">7</button>               
+                    <button type="button" class= "number" onclick="insert(8)">8</button>  
+                    <button type="button" class= "number" onclick="insert(9)">9</button>
+                    <button type="button" class= "number" onclick="insert(0)">0</button>
+                    <button type="button" class= "number" onclick="insert('.')">.</button>
         
-    </form>
+                    <button type="button" class= "operator" onclick="insert('+')">+</button>               
+                    <button type="button" class= "operator" onclick="insert('-')">-</button>               
+                    <button type="button" class= "operator" onclick="insert('*')">*</button>               
+                    <button type="button" class= "operator" onclick="insert('/')">/</button>   
+                    <button type="button" class= "operator" onclick="equal()">=</button>  
+                    <button type="button" class= "operator" onclick="back()">Del</button>  
+        
+        
+                    
+                </div>
+            </div>
+        </div>
+
+    <!-- </form> -->
+    <script src="./script/calculator.js" defer></script>
     </body>
 </html>
